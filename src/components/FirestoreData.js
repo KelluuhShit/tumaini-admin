@@ -42,7 +42,7 @@ const FetchActivations = () => {
         <div className={styles.container}>
             <h2 className={styles.heading}>Activation Messages [{activations.length}]</h2>
             {loading ? (
-                <p className={styles.loading}>Loading...</p>
+                <p className={styles.loader}>Loading...</p>
             ) : error ? (
                 <p className={styles.error}>{error}</p>
             ) : activations.length === 0 ? (
